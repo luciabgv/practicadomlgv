@@ -24,6 +24,10 @@ function verMas(){
     console.log('desde la funcion ver mas')
 //traer el elemento padre(section)
 let sectionPadre = document.getElementById('noticia');
+
+
+if(btnVerMas.innerHTML === 'Ver mas...'){
+
 //crear el elemento nuevo html(nodo/objeto)
 let parrafoNuevo = document.createElement('p'); //<p></p>
 //preparar el elemento
@@ -35,10 +39,10 @@ sectionPadre.prepend(parrafoNuevo); //agrega el nodo hijo al principio
 sectionPadre.insertBefore(parrafoNuevo, btnVerMas);
 //cambiar el boton
 btnVerMas.innerHTML = 'Ocultar';
-btnVerMas.className = 'btn btn-outline-danger' 
+btnVerMas.className = 'btn btn-outline-danger'
 //nota para acceder al texto de un input
-document.getElementById('buscador').value
+console.log(document.getElementById('buscador').value);
+}else{
+    console.log('tengo que borrar el parrafo');
 
 }
-
-
