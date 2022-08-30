@@ -44,5 +44,13 @@ btnVerMas.className = 'btn btn-outline-danger'
 console.log(document.getElementById('buscador').value);
 }else{
     console.log('tengo que borrar el parrafo');
+//borrar ele elemento del html
 
+// console.log(sectionPadre.children[3])
+sectionPadre.removeChild(sectionPadre.children[3]);
+
+//resetear el boton
+btnVerMas.innerHTML = 'Ver mas...';
+btnVerMas.className = 'btn btn-outline-primary';
+}
 }
